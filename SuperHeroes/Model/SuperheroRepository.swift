@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SuperheroRepository: ObservableObject {
+class SuperheroRepository {
     
     var heroes: [Superhero] {
         didSet {
