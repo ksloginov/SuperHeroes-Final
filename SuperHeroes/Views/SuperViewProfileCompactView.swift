@@ -10,7 +10,7 @@ import SwiftUI
 struct SuperViewProfileCompactView: View {
     
     let superhero: Superhero
-    @Binding var health: Int
+    let health: Int
     
     var body: some View {
         VStack {

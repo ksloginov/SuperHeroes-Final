@@ -23,7 +23,7 @@ struct BattleView: View {
             Color("standardBackground").edgesIgnoringSafeArea(.all)
             
             VStack {
-                SuperViewProfileCompactView(superhero: viewModel.opponent, health: $viewModel.opponentHeath)
+                SuperViewProfileCompactView(superhero: viewModel.opponent, health: viewModel.opponentHeath)
                     .frame(width: 200.0)
                 
                 Spacer()
@@ -41,7 +41,7 @@ struct BattleView: View {
                 
                 Spacer()
                 
-                SuperViewProfileCompactView(superhero: viewModel.you, health: $viewModel.yourHeath)
+                SuperViewProfileCompactView(superhero: viewModel.you, health: viewModel.yourHeath)
                     .frame(width: 200.0)
             }
             .padding()
